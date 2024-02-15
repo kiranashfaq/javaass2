@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 2</title>
+    <!-- <style>
+            @font-face {
+              font-family: poppin;
+              src: url(./src/fonts/Agbalumo-Regular.ttf);
+            }
+            body {
+              margin: 0%;
+              padding: 0;
+            }
+            .bg-img {
+              background-image: url("./src/img/bgimg.webp");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 100vh;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              position: relative;
+            } 
+            .java-h1 {
+              font-size: 50px;
+              font-family: poppin;
+              color: rgb(148, 128, 17);
+              text-shadow: 2px 2px 3px white;
+              text-align: start;
+              margin-top: -0.1%;
+              padding-top: 3%;
+              padding-left: 3%;
+              animation: java 2s forwards ease ;
+            } 
+    
+    </style> -->
+    <style>
+      @font-face {
+        font-family: poppin;
+        src: url(./src/fonts/Agbalumo-Regular.ttf);
+      }
+      .bg-img {
+        background-image: url(./src/img/bgimg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+      }
+      .decode-text {
+        font-size: 30px;
+        padding-left: 3%;
+        padding-top: 3%;
+      }
+      .space {
+        display: inline-block;
+        width: 10px;
+      }
+      .text-animation {
+        display: inline-block;
+        position: relative;
+        color: transparent;
+
+        text-transform: uppercase;
+        &:before {
+          content: "";
+          color: rgb(216, 160, 40);
+
+          /* text-shadow: 2px 2px 4px white; */
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background: #ffffff;
+          width: 0;
+          height: 1.2em;
+          -webkit-transform: translate(-50%, -55%);
+          -ms-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+        }
+
+        &.state-1 {
+          &:before {
+            width: 1px;
+          }
+        }
+        &.state-2 {
+          &:before {
+            width: 0.9em;
+          }
+        }
+        &.state-3 {
+          color: rgb(99, 76, 12);
+          &:before {
+            width: 0;
+          }
+        }
+      }
+
+      // demo styles
+      #refresh {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+      }
+      @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+      div {
+        font-family: poppin;
+        text-shadow: 2px 2px 4px white;
+        font-size: 50px;
+      }
+      body {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .ass-link a{
+        color: white;
+        text-decoration: none;
+        font-family: poppin;
+        /* text-shadow: 2px 2px 4px rgb(175, 132, 13); */
+        font-size: 35px;
+        padding-left: 3%;
+        transition: 1s ease;
+      }
+      .ass-link a:hover{
+        color: rgb(175, 132, 13);
+        text-shadow: 2px 2px 4px rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="decode-text">
+        <div class="text-animation">j</div>
+        <div class="text-animation">a</div>
+        <div class="text-animation">v</div>
+        <div class="text-animation">a</div>
+        <div class="text-animation">s</div>
+        <div class="text-animation">c</div>
+        <div class="text-animation">r</div>
+        <div class="text-animation">i</div>
+        <div class="text-animation">p</div>
+        <div class="text-animation">t</div>
+        <div class="space"></div>
+
+        <div class="text-animation">A</div>
+        <div class="text-animation">s</div>
+        <div class="text-animation">s</div>
+        <div class="text-animation">i</div>
+        <div class="text-animation">g</div>
+        <div class="text-animation">m</div>
+        <div class="text-animation">e</div>
+        <div class="text-animation">n</div>
+        <div class="text-animation">t</div>
+        <div class="space"></div>
+      </div>
+      <ul>
+      <li class="ass-link"><a href="./src/chap 4/index.html">Chap 4</a></li>
+      <li class="ass-link"><a href="./src/chap 5/index.html">Chap 5</a></li>
+      </ul>
+</div>
+      <!-- <a id="refresh" onclick="decodeText();">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+</a> -->
+
+      <!-- <h1 class="java-h1">JavaScript Assigment 2</h1>
+      <br />
+      <h4 class="ass-link"><a href="./src/chap 4/index.html">Chap 4</a></h4>
+      <h4 class="ass-link"><a href="./src/chap 5/index.html">Chap 5</a></h4>
+   -->
+      <script>
+        /* ------------------------------------------------------------------------ *  
+4 states per letter: Transparent | Line | Block | Visible.
+These states are shuffled for a unique "decode" effect each time.
+* ------------------------------------------------------------------------ */
+
+        function decodeText() {
+          var text = document.getElementsByClassName("decode-text")[0];
+          // debug with
+          // console.log(text, text.children.length);
+
+          // assign the placeholder array its places
+          var state = [];
+          for (var i = 0, j = text.children.length; i < j; i++) {
+            text.children[i].classList.remove("state-1", "state-2", "state-3");
+            state[i] = i;
+          }
+
+          // shuffle the array to get new sequences each time
+          var shuffled = shuffle(state);
+
+          for (var i = 0, j = shuffled.length; i < j; i++) {
+            var child = text.children[shuffled[i]];
+            classes = child.classList;
+
+            // fire the first one at random times
+            var state1Time = Math.round(Math.random() * (2000 - 300)) + 50;
+            if (classes.contains("text-animation")) {
+              setTimeout(firstStages.bind(null, child), state1Time);
+            }
+          }
+        }
+
+        // send the node for later .state changes
+        function firstStages(child) {
+          if (child.classList.contains("state-2")) {
+            child.classList.add("state-3");
+          } else if (child.classList.contains("state-1")) {
+            child.classList.add("state-2");
+          } else if (!child.classList.contains("state-1")) {
+            child.classList.add("state-1");
+            setTimeout(secondStages.bind(null, child), 100);
+          }
+        }
+        function secondStages(child) {
+          if (child.classList.contains("state-1")) {
+            child.classList.add("state-2");
+            setTimeout(thirdStages.bind(null, child), 100);
+          } else if (!child.classList.contains("state-1")) {
+            child.classList.add("state-1");
+          }
+        }
+        function thirdStages(child) {
+          if (child.classList.contains("state-2")) {
+            child.classList.add("state-3");
+          }
+        }
+
+        function shuffle(array) {
+          var currentIndex = array.length,
+            temporaryValue,
+            randomIndex;
+
+          // While there remain elements to shuffle...
+          while (0 !== currentIndex) {
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+          }
+          return array;
+        }
+
+        // Demo only stuff
+        decodeText();
+
+        // beware: refresh button can overlap this timer and cause state mixups
+        setInterval(function () {
+          decodeText();
+        }, 10000);
+      </script>
+    </div>
+  </body>
+</html>
